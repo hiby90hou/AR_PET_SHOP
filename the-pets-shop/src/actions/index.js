@@ -1,4 +1,4 @@
-import { ADD_APPLE } from "../constants/action-types";
+import { ADD_APPLE, REMOVE_APPLE } from "../constants/action-types";
 
 // {
 //   type: 'ADD_APPLE',
@@ -7,3 +7,5 @@ import { ADD_APPLE } from "../constants/action-types";
 
 
 export const addApple = apple =>({type: ADD_APPLE});
+
+export const removeApple = apple =>({type: REMOVE_APPLE});
