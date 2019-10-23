@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from 'react-redux';
 import { addApple, removeApple } from '../../actions';
 
+import Cat from '../Pets/Cat';
+
 const mapStateToProps = state => {
   return { apples: state.apples };
 };
@@ -17,7 +19,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        this is a test {this.props.apples} <button onClick={this.addOne}>add one</button><button onClick={this.minusOne}>minus one</button>
+        This is a test {this.props.apples} <button onClick={this.addOne}>add one</button><button onClick={this.minusOne}>minus one</button>
+
+        This is a Cat:
+        <Cat/>
       </div>
     );
   }
